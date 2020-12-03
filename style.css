@@ -281,7 +281,7 @@ header {
 .sort {
     width: 100%;
 }
-.sort div {
+.sortBtn {
     padding: 5px 10px;
     margin: 0px 5px;
     color: white;
@@ -303,6 +303,7 @@ header {
 }
 
 .postBtn {
+
     padding: 3px 5px;
     margin: 2px 3px;
     background-color: gray;
@@ -311,6 +312,21 @@ header {
     cursor: pointer;
 }
 
+.createPostSm {
+    margin-left: 20px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid grey;
+    color: white;
+    background-color: rgb(120, 120, 233);
+}
+.createPostSm:hover {
+    cursor: pointer;
+    background-color: rgb(94, 94, 185);
+}
+.emptyBtn {
+    width: 80px;
+}
 @media (max-width: 980px) {
     .cardsContainer {
         column-count: 3;

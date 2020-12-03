@@ -12,14 +12,14 @@ let postURL = ''
 let validation = {}
 
 function checkFields(item) {
-    if(postTitle.length==0) {
+    if(postTitle.length < 20) {
         item.path[1].children[2].style.display = 'block'
         validation.title = false
     } else {
         item.path[1].children[2].style.display = 'none'
         validation.title = true
     }
-    if(postText.length==0) {
+    if(postText.length < 50) {
         item.path[1].children[5].style.display = 'block'
         validation.text = false
     } else {

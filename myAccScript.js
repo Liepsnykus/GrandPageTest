@@ -2,7 +2,7 @@ const cardsContainer = document.getElementById('cardsContainer')
 const navLogOut = document.getElementById('navLogOut')
 const accBtn = document.getElementById('accBtn')
 const authorName = document.getElementById('authorName')
-
+const createPostSm = document.getElementById('createPostSm')
 
 let userKey = ''
 let accName = localStorage.getItem('accUser')
@@ -182,13 +182,17 @@ function deleteCard(event) {
     }
 }
 
+function openCreatePage() {
+    window.location.href = 'createPost.html' 
+}
+
 logCheck()
 displayAllPosts()  
 
 sortOld.addEventListener('click', sortCardsOld)
 sortNew.addEventListener('click',sortCardsNew)
 navLogOut.addEventListener('click', logOut)
-
+createPostSm.addEventListener('click', openCreatePage)
 
 // delete existing post (have to have secret key)
 // http://167.99.138.67:1111/deletepost
