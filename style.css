@@ -1,0 +1,333 @@
+body {
+    margin: 0px;
+    font-family: 'Poppins', sans-serif;
+}
+
+header {
+    width: 100%;
+}
+
+.d-none {
+    display: none;
+}
+.d-flex {
+    display: flex;
+}
+.dir-col {
+    flex-direction: column;
+}
+.j-sp-btw {
+    justify-content: space-between;
+}
+
+.j-center {
+    justify-content: center;
+}
+.j-end {
+    justify-content: flex-end;
+}
+.align-center {
+    align-items: center;
+}
+.align-start {
+    align-items: flex-start;
+}
+
+.p-20 {
+    padding: 20px;
+}
+
+/* HEADER */
+.mainLogo {
+    font-size: 30px;
+    font-weight: 600;
+    text-decoration: none;
+    color: black;
+    margin: 0px 40px;
+}
+
+.navBtn {
+    text-decoration: none;
+    padding: 3px;
+    margin: 0px 20px;
+    font-weight: 600;
+    color: black;
+}
+
+.navBtn:hover{
+    color: blue;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.navButtons {
+    margin: 0px 40px;
+}
+
+.coverImg {
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+    background-image: url("https://cutewallpaper.org/21/hipster-background/Hipster-Backgrounds.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 20px;
+}
+
+.coverName {
+    font-size: 50px;
+    font-family: 'Knewave', cursive;
+
+}
+
+/* MAIN PAGE */
+
+.cardsContainer {
+    column-count: 4;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.cardFrame {
+    display: inline-block;
+    max-width: 330px;
+    margin: 10px 5px;
+    box-sizing: border-box;
+}
+
+.cardFrame img {
+    width: 100%;
+    transition: 0.2s;
+}
+.cardFrame img:hover {
+    filter: grayscale(80%);
+    filter: opacity(0.6);
+    cursor: pointer;
+}
+.cardTitle {
+    word-break: break-word;
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 5px;
+}
+.cardTitle:hover {
+    cursor: pointer;
+}
+.cardInfo {
+    display: flex;
+}
+
+.cardDate {
+    font-size: 14px;
+    font-weight: 340;
+}
+.cardAuthor {
+    font-weight: 600;
+    font-size: 14px;
+    color: blue;
+}
+
+.cardAuthor:hover {
+    cursor: pointer;
+    color: blue;
+    text-decoration: underline;
+}
+
+.cardText {
+    word-break: break-word;
+    font-size: 15px;
+    font-weight: 300;
+    color: rgb(104, 104, 104);
+    margin-top: 5px;
+}
+
+.readMoreBtn {
+    font-size: 14px;
+    font-weight: 600;
+    margin-top: 0px;
+    cursor: pointer;
+}
+
+.bigNr{
+    font-size: 80px;
+
+}
+
+/* POST PAGE */
+
+.postContainerBig {
+    max-width: 1100px;
+    margin: auto;
+    padding: 10px 50px;
+}
+
+.postImage {
+    width: 40%;
+    margin-right: 10px;
+
+}
+
+.postText {
+    word-break: break-word;
+
+}
+
+/* LOGIN PAGE */
+
+.loginContainer{
+    margin-top: 50px;
+    background-color: rgba(248, 248, 248, 0.582);
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.loginBody {
+    background-image: url("https://s2.15min.lt/images/photos/2015/08/03/original/mz31415kn20150803-55bf6af3336ea.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+.loginContainer input {
+    padding: 10px;
+    width: 200px;
+    margin-top: 15px;
+}
+
+.loginContainer div{
+    margin-top: 15px;
+    background-color: rgb(113, 197, 224);
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    padding: 10px;
+    align-self: flex-end;
+}
+.loginContainer div:hover {
+    cursor: pointer;
+}
+.loginContainer span {
+    color: red;
+    font-size: 12px;
+}
+.line {
+    width: 100%;
+    height: 1px;
+    background-color: lightgray;
+    margin: 10px 0px;
+}
+
+.addBtn {
+    display: inline-block;
+    width: 100%;
+    margin: 10px 5px;
+    box-sizing: border-box;
+    padding: 30px;
+    height: 300px;
+    background-color: lightgray;
+    background-image: url("https://cdn3.iconfinder.com/data/icons/gray-toolbar/512/create-512.png");
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: 3px solid grey;
+    border-radius: 10px;
+    font-size: 20px;
+    color:rgb(99, 99, 99);
+    text-align: center;
+}
+
+.addBtn:hover {
+    cursor: pointer;
+    background-color: rgb(158, 158, 158);
+}
+
+/* AUTHOR */
+
+#authorName {
+    margin: 20px;
+    font-size: 40px;
+    color: blue;
+}
+
+/* POST PAGE */
+
+.create input {
+    width: 300px;
+    padding: 10px;
+}
+.create textarea {
+    width: 300px;
+    padding: 10px;
+}
+.create span {
+    color: red;
+    font-size: 12px;
+}
+#postBtn {
+    padding: 10px;
+    margin: 10px 0px;
+    width: 80px;
+    background-color: rgb(75, 113, 184);
+    color: white;
+    text-align: center;
+    border-radius: 5px;
+}
+#postBtn:hover {
+    cursor: pointer;
+    background-color: rgb(37, 84, 172);
+}
+
+.sort {
+    width: 100%;
+}
+.sort div {
+    padding: 5px 10px;
+    margin: 0px 5px;
+    color: white;
+
+}
+
+#sortNew {
+    background-color: gray;
+}
+#sortOld {
+    background-color: rgb(74, 74, 158);
+    cursor: pointer;
+}
+
+.cardButtons {
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+}
+
+.postBtn {
+    padding: 3px 5px;
+    margin: 2px 3px;
+    background-color: gray;
+    color: white;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+@media (max-width: 980px) {
+    .cardsContainer {
+        column-count: 3;
+        max-width: 900px;
+    }
+    .postContainerBig{
+        max-width: 900px;
+    }
+    
+}
+
+@media (max-width: 720px) {
+    .cardsContainer {
+        column-count: 2;
+        max-width: 650px;
+    }
+    .postContainerBig{
+        max-width: 650px;
+    }
+}
