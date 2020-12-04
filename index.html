@@ -25,10 +25,20 @@
     </header>
     <main>
         <section >
-            <div class="sort d-flex j-center">
-                <div id="sortNew" class="sortBtn">Sort: New first</div>
-                <div id="sortOld" class="sortBtn">Sort: Old first</div>
+            <div class="d-flex j-sp btw">
+                <div class="emptyBtn"></div>
+                <div class="sort d-flex j-center">
+                    <div id="sortNew" class="sortBtn">Sort: New first</div>
+                    <div id="sortOld" class="sortBtn">Sort: Old first</div>
+                </div>
+                <div class="d-flex searchBar">
+                   <input type="text" placeholder="search Author">
+                   <i class="fas fa-search" id="search"></i>
+                   <div id="authorWarning" class="d-none">Author does not egzist</div>
+                </div>
+               
             </div>
+            
             
             <div class="cardsContainer" id="cardsContainer">
                         

@@ -3,6 +3,8 @@ const navLogBtn = document.getElementById('navLogBtn')
 const accBtn = document.getElementById('accBtn')
 const sortNew = document.getElementById('sortNew')
 const sortOld = document.getElementById('sortOld')
+const searchBtn = document.getElementById('search')
+const authorWarning = document.getElementById('authorWarning')
 
 let userKey = ''
 let dataArr = []
@@ -17,6 +19,29 @@ function visitAuthor(event) {
     localStorage.setItem('user', JSON.stringify(select))
     console.log(event);
     window.location.href = 'author.html'
+}
+
+function searchAuthor(event) {
+
+    if( event.path[1].children[0].value.length>0){
+        let searchName = event.path[1].children[0].value
+        let searchresult = 0
+        dataArr.map(item => {
+            if(item.username.toUpperCase() == searchName.toUpperCase()){
+                searchresult++
+            }
+        })
+        if(searchresult > 0) {
+            let select = dataArr.filter(el => el.username.toUpperCase() == searchName.toUpperCase())[0]
+            localStorage.setItem('user', JSON.stringify(select))
+            window.location.href = 'author.html'
+        } else {
+            authorWarning.style.display = 'block'
+            setTimeout(function(){authorWarning.style.display = 'none' }, 3000);
+        }
+     
+    }
+    
 }
 
 function openCreatePage() {
@@ -162,4 +187,5 @@ displayAllPosts()
 
 sortOld.addEventListener('click', sortCardsOld)
 sortNew.addEventListener('click',sortCardsNew)
+searchBtn.addEventListener('click', searchAuthor)
 

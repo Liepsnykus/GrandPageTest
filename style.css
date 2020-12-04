@@ -327,6 +327,26 @@ header {
 .emptyBtn {
     width: 80px;
 }
+
+.searchBar {
+    margin-right: 20px;
+    position: relative;
+    text-align: center;
+}
+
+#search {
+    background-color: transparent;
+    border: 2px solid gray;
+    text-align: center;
+    padding: 5px;
+}
+#authorWarning {
+    color: red;
+    font-size: 12px;
+    position: absolute;
+    top: -18px;
+
+}
 @media (max-width: 980px) {
     .cardsContainer {
         column-count: 3;
